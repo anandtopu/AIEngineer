@@ -83,8 +83,4 @@ python src/rag/tfidf_rag_demo.py
 - MLOps/LLMOps (experiment tracking concepts, CI checks, monitoring)
 - ML system design (requirements → data → modeling → serving → monitoring)
 
-## Status
 
-This repo is intentionally structured like a course. If you want me to tailor it:
-- Tell me your target companies/roles (startup vs FAANG-style)
-- Tell me your timeline (2 weeks, 1 month, 3 months)
