@@ -16,16 +16,25 @@ If you’re following the structured schedule, start with `docs/3_MONTH_PLAN.md`
 
 - `modules/08_pytorch_core.md`
 - `modules/12_transformer_internals.md`
+- `modules/17_modern_training_and_alignment.md`
 
-## LLMs + RAG
+## LLMs, Agents, and RAG
 
 - `modules/09_llm_rag_primer.md`
 - `modules/13_llm_inference_and_finetuning.md`
+- `modules/14_llm_agents_and_tool_use.md`
+- `modules/15_production_rag_patterns.md`
 
-## System Design + MLOps
+## System Design, MLOps, and LLMOps
 
 - `modules/10_ml_system_design_primer.md`
 - `modules/11_mlops_llmops_primer.md`
+- `modules/16_llm_observability_cost_safety.md`
+
+## Role map (start here if you already know ML)
+
+- `modules/18_ai_engineer_2026_capabilities.md` -- what 2026 JDs
+  actually require, with a mapping to every file in this repo.
 
 ## Projects
 
@@ -37,3 +46,6 @@ Use these for portfolio + system design practice:
 - `../projects/04_ranking_baseline/`
 - `../projects/05_time_series/`
 - `../projects/06_mini_llm_eval/`
+- `../projects/07_agent_tool_use/`
+- `../projects/08_hybrid_rag/`
+- `../projects/09_llm_gateway/`

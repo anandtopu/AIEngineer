@@ -76,6 +76,23 @@ def main():
         Path("src/deep_learning/transformer_encoder_torch.py"),
         Path("src/deep_learning/lora_from_scratch.py"),
         Path("src/deep_learning/autograd_micro.py"),
+        Path("src/deep_learning/rope_positional.py"),
+        Path("src/deep_learning/kv_cache.py"),
+        Path("src/deep_learning/speculative_decoding.py"),
+        Path("src/deep_learning/dpo_from_scratch.py"),
+        Path("src/deep_learning/knowledge_distillation.py"),
+        Path("src/deep_learning/clip_dual_encoder.py"),
+        Path("src/rag/hybrid_search_bm25.py"),
+        Path("src/rag/cross_encoder_rerank.py"),
+        Path("src/rag/semantic_cache.py"),
+        Path("src/rag/ragas_style_eval.py"),
+        Path("src/llm/agent_react_loop.py"),
+        Path("src/llm/prompt_patterns.py"),
+        Path("src/llm/structured_output.py"),
+        Path("src/llm/streaming_generator.py"),
+        Path("src/llm/guardrails.py"),
+        Path("src/llm/token_economics.py"),
+        Path("src/llm/observability_tracing.py"),
     ]
 
     failed = 0
@@ -91,6 +108,9 @@ def main():
         Path("projects/04_ranking_baseline/train.py"),
         Path("projects/05_time_series/baseline.py"),
         Path("projects/06_mini_llm_eval/run.py"),
+        Path("projects/07_agent_tool_use/run.py"),
+        Path("projects/08_hybrid_rag/run.py"),
+        Path("projects/09_llm_gateway/run.py"),
     ]
 
     for proj in projects:

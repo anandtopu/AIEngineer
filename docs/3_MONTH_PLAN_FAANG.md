@@ -95,60 +95,85 @@ Weekend:
 - Mock:
   - 1 debugging-style ML mock (nan loss, overfitting)
 
-### Week 6: LLM fundamentals + RAG evaluation
+### Week 6: Transformer internals + modern inference
 
 - Learning:
-  - `docs/modules/09_llm_rag_primer.md`
-  - `interview/llm_rag_questions.md`
+  - `docs/modules/12_transformer_internals.md`
+  - `docs/modules/17_modern_training_and_alignment.md`
 - Run:
-  - `projects/02_rag_baseline/run.py` (inspect retrieval metrics)
+  - `src/deep_learning/attention_from_scratch.py`
+  - `src/deep_learning/rope_positional.py`
+  - `src/deep_learning/kv_cache.py`
+  - `src/deep_learning/lora_from_scratch.py`
 - Coding focus:
   - Graph basics (BFS shortest path)
 - System design drill:
-  - Internal KB assistant
+  - Internal KB assistant (see `interview/genai_system_design_cases.md` case 3)
 
-### Week 7: Project 02 (RAG) + LLMOps
+### Week 7: LLM application layer -- agents, prompts, guardrails
 
-- Project:
-  - Improve `projects/02_rag_baseline/` by adding docs and gold queries
 - Learning:
-  - `docs/modules/11_mlops_llmops_primer.md`
+  - `docs/modules/14_llm_agents_and_tool_use.md`
+  - `docs/modules/16_llm_observability_cost_safety.md`
+- Run and read:
+  - `src/llm/agent_react_loop.py`
+  - `src/llm/prompt_patterns.py`
+  - `src/llm/structured_output.py`
+  - `src/llm/guardrails.py`
+  - `src/llm/token_economics.py`
+- Project:
+  - `projects/07_agent_tool_use/run.py` -- then extend with a 4th tool.
 - Coding focus:
   - Dynamic programming intro
 - Mock:
-  - 1 LLM/RAG system design mock
+  - 1 GenAI system design mock from `genai_system_design_cases.md`
 
-### Week 8: Monitoring + drift + incident thinking
+### Week 8: Production RAG + monitoring
 
+- Learning:
+  - `docs/modules/15_production_rag_patterns.md`
+  - `docs/modules/11_mlops_llmops_primer.md`
 - Run:
+  - `src/rag/hybrid_search_bm25.py`
+  - `src/rag/cross_encoder_rerank.py`
+  - `src/rag/semantic_cache.py`
+  - `src/rag/ragas_style_eval.py`
+  - `src/llm/observability_tracing.py`
   - `projects/03_monitoring_drift/drift_check.py`
-- Practice:
-  - Define monitoring dashboards + alert thresholds
+  - `projects/08_hybrid_rag/run.py`
 - Coding focus:
   - Backtracking patterns
 - Mock:
-  - 1 system design mock (fraud or ranking)
+  - 1 production-RAG design mock
 
 ---
 
 ## Month 3 — FAANG Loop Simulation (coding + ML + design + behavioral)
 
-### Week 9: Ranking project + ranking system design
+### Week 9: Ranking + GenAI system design
 
 - Project:
   - `projects/04_ranking_baseline/`
 - System design drills:
-  - Search ranking
-  - Recommendations feed
+  - Search ranking (classical)
+  - `genai_system_design_cases.md` cases 1-3 (RAG chatbot, code review
+    agent, semantic search over wiki + tickets)
 - Coding focus:
   - Advanced graphs (topological sort / union-find)
 
-### Week 10: Time series project + experimentation
+### Week 10: LLM gateway, cost, alignment
 
+- Learning:
+  - `docs/modules/18_ai_engineer_2026_capabilities.md`
 - Project:
-  - `projects/05_time_series/`
+  - `projects/09_llm_gateway/run.py` -- then add per-tenant budgets
+    from a persistent store
+- Run:
+  - `src/deep_learning/dpo_from_scratch.py`
+  - `src/deep_learning/knowledge_distillation.py`
+  - `src/advanced/quantization_int8.py`
 - ML thinking:
-  - Offline vs online metrics, A/B tests, guardrails
+  - Cost/latency tradeoffs, A/B tests, guardrails
 - Coding focus:
   - Mixed sets; revisit weak patterns
 
@@ -156,8 +181,10 @@ Weekend:
 
 - 2 coding mocks
 - 1 ML fundamentals mock
-- 1 ML system design mock
+- 1 ML system design mock (classical)
+- 1 GenAI system design mock (pick a case from `genai_system_design_cases.md`)
 - 1 behavioral mock
+- Drill `interview/llm_agents_and_production_questions.md` out loud
 
 ### Week 12: Final polish + interview readiness
 
@@ -165,8 +192,11 @@ Weekend:
 - Revisit weak areas
 - Prepare:
   - 6-8 STAR stories
-  - 2-minute explanations for: bias/variance, calibration, PR-AUC vs ROC-AUC, leakage
-  - 3 full system designs (ML + LLM)
+  - 2-minute explanations for: bias/variance, calibration, PR-AUC
+    vs ROC-AUC, leakage
+  - 2-minute explanations for: RoPE, KV cache, DPO vs PPO, LoRA,
+    speculative decoding, RAG faithfulness vs relevancy
+  - 3 full system designs (1 classical ML + 2 GenAI)
 
 ---
 
