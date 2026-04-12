@@ -36,7 +36,30 @@ Start here once you finish the fundamentals in `docs/`.
 python projects/01_churn_prediction/train.py
 python projects/02_rag_baseline/run.py
 python projects/03_monitoring_drift/drift_check.py
+python projects/04_ranking_baseline/train.py
+python projects/05_time_series/baseline.py
+python projects/06_mini_llm_eval/run.py
 ```
+
+## Hands-on labs for modern AI Engineer interviews
+
+The `src/` tree includes from-scratch demos for the topics LLM-era
+interviews actually drill on:
+
+- **Transformers & attention** -- `src/deep_learning/attention_from_scratch.py`,
+  `src/deep_learning/transformer_encoder_torch.py`
+- **Backprop from first principles** -- `src/deep_learning/autograd_micro.py`
+- **LoRA fine-tuning** -- `src/deep_learning/lora_from_scratch.py`
+- **Tokenization (BPE)** -- `src/advanced/bpe_tokenizer.py`
+- **LLM decoding strategies** -- `src/advanced/llm_sampling.py`
+- **INT8 quantization** -- `src/advanced/quantization_int8.py`
+- **Dense retrieval & chunking** -- `src/rag/embeddings_knn_search.py`,
+  `src/rag/chunking_strategies.py`
+- **Class imbalance & threshold tuning** -- `src/advanced/class_imbalance.py`
+- **A/B test statistics** -- `src/advanced/ab_test_significance.py`
+
+See `docs/modules/12_transformer_internals.md` and
+`docs/modules/13_llm_inference_and_finetuning.md` for the matching notes.
 
 ## Quickstart
 

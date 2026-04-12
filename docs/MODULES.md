@@ -15,10 +15,12 @@ If you’re following the structured schedule, start with `docs/3_MONTH_PLAN.md`
 ## Deep Learning
 
 - `modules/08_pytorch_core.md`
+- `modules/12_transformer_internals.md`
 
 ## LLMs + RAG
 
 - `modules/09_llm_rag_primer.md`
+- `modules/13_llm_inference_and_finetuning.md`
 
 ## System Design + MLOps
 
@@ -34,3 +36,4 @@ Use these for portfolio + system design practice:
 - `../projects/03_monitoring_drift/`
 - `../projects/04_ranking_baseline/`
 - `../projects/05_time_series/`
+- `../projects/06_mini_llm_eval/`

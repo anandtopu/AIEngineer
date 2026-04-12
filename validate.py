@@ -65,6 +65,17 @@ def main():
         Path("src/sql/sql_practice_sqlite.py"),
         Path("src/sql/window_functions_practice_sqlite.py"),
         Path("src/rag/tfidf_rag_demo.py"),
+        Path("src/rag/embeddings_knn_search.py"),
+        Path("src/rag/chunking_strategies.py"),
+        Path("src/advanced/bpe_tokenizer.py"),
+        Path("src/advanced/llm_sampling.py"),
+        Path("src/advanced/quantization_int8.py"),
+        Path("src/advanced/class_imbalance.py"),
+        Path("src/advanced/ab_test_significance.py"),
+        Path("src/deep_learning/attention_from_scratch.py"),
+        Path("src/deep_learning/transformer_encoder_torch.py"),
+        Path("src/deep_learning/lora_from_scratch.py"),
+        Path("src/deep_learning/autograd_micro.py"),
     ]
 
     failed = 0
@@ -79,6 +90,7 @@ def main():
         Path("projects/03_monitoring_drift/drift_check.py"),
         Path("projects/04_ranking_baseline/train.py"),
         Path("projects/05_time_series/baseline.py"),
+        Path("projects/06_mini_llm_eval/run.py"),
     ]
 
     for proj in projects:
