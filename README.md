@@ -1,5 +1,11 @@
 # AI Engineer Interview Preparation (Comprehensive)
 
+> A hands-on, 2026-ready curriculum for AI Engineer / ML Engineer interviews — 18 module notes, 38 runnable Python labs, and 9 portfolio projects covering classical ML through LLMs, RAG, agents, and production LLMOps.
+
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
 This repository is a **complete, hands-on tutorial** to prepare for **AI Engineer / ML Engineer** interviews.
 
 It is designed for:
@@ -115,6 +121,11 @@ Windows (PowerShell):
 .venv\Scripts\Activate.ps1
 ```
 
+macOS / Linux:
+```bash
+source .venv/bin/activate
+```
+
 ### 3) Install dependencies
 
 ```bash
@@ -145,4 +156,18 @@ python src/rag/tfidf_rag_demo.py
 - MLOps/LLMOps (experiment tracking concepts, CI checks, monitoring)
 - ML system design (requirements → data → modeling → serving → monitoring)
 
+## Validate the Repo
 
+Run the full smoke test (checks imports and executes every key script end-to-end):
+
+```bash
+python validate.py
+```
+
+## Contributing
+
+Issues and PRs welcome. If you add a script under `src/` or a new project, please also add it to `validate.py` and `INDEX.md` so the smoke test stays complete.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
